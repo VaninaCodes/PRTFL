@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+body{
+    background-color: black;
+    color: whitesmoke;
+    
+    
+}
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+}
+button{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    width: fit-content;
+}
+p{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    min-height: 80vh;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 20vh;
+}
+footer a{
+    text-decoration: none;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: whitesmoke;
+}
+footer a:hover{
+    color: grey;
+}

@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-nav a{
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
-nav li{
-    list-style: none;
+
+p{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
