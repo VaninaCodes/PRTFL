@@ -4,9 +4,104 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-
+h2{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 95;
+    font-style: normal;
+    color: grey;
+}
 p{
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
+}
+/* #estado{
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: grey;
+} */
+nav {
+    background-color: black;
+    width: 100%;
+    min-height: 10vh;
+}
+nav a{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav li{
+    list-style: none;
+}
+ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+}
+nav a:hover{
+    color: grey;
+}
+main{
+    padding: 20px;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+}
+footer p{
+    color: whitesmoke;
+}
+footer a{
+    text-decoration: none;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: whitesmoke; 
+}
+footer a:hover{
+    color: grey;
+}
+
+img{
+    width: 350px;
+}
+#botones{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: black; 
+}
+#estado{
+    font-size: 25px;
+}
+#ubicacion{
+    font-size: 25px;
+}
+#ubicacion a{
+    color: gray;
+}
+#salir:hover{
+    color: darkred;
 }

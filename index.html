@@ -20,52 +20,100 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <audio src="/assets/audio/indexMusic.mp3" autoplay loop>
+      Tu navegador no soporta audio.
+    </audio>
     <nav>
-      <ul>
+      <ul class="animate__animated animate__fadeInDown">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="">Sobre mi</a></li>
         <li><a href="">Proyectos</a></li>
         <li><a href="">Contacto</a></li>
+        <li><a id="salir" href="menu.html">Salir</a></li>
       </ul>
     </nav>
 
     <main>
-      <!-- Descripcion escrita -->
-      <div id="descripcion">
-        <p id="estado">Disposible para trabajo de Freelance</p>
-        <h1>Holi, Soy Vanina Resquin</h1>
-        <h2>Frontend Developer</h2>
-        <p>
-          Me gusta toda la experiencia de crear interfaces lindas, funcionales y
-          centradas en los usuarios. Ver una idea cobrar vida como una
-          aplicacion web es mi mayor orgullo.
-        </p>
+      <div id="container">
+        <!-- Descripcion escrita -->
+        <div id="descripcion">
+          <!-- <p class="animate__animated animate__fadeInDown" id="estado">
+            <i>Disposible para trabajo de Freelance </i>
+          </p> -->
+          <h1 class="animate__animated animate__fadeIn">
+            Holi, <br />
+            Soy Vanina Resquin
+          </h1>
+          <br />
+          <h2><span id="typed"></span></h2>
+          <br />
+          <p class="animate__animated animate__fadeIn">
+            Me gusta toda la experiencia de <strong>crear</strong> interfaces
+            lindas, <strong>funcionales</strong> y centradas en los usuarios.
+            Ver una idea cobrar vida como una aplicacion web es mi mayor
+            <strong>orgullo</strong>.
+          </p>
 
-        <!-- Ubicacion y Estado -->
-        <div>
-          <p><img src="" alt="" />Situada en Formosa, Argentina</p>
-          <p><img src="" alt="" />Actualmente Disponible</p>
+          <!-- Ubicacion y Estado -->
+          <div>
+            <p id="ubicacion" class="animate__animated animate__fadeIn">
+              <img
+                src="/assets/img/location_logo.png"
+                alt="pixelart logo"
+                style="width: 25px"
+              />
+              Situada en
+              <i
+                ><a
+                  href="https://maps.app.goo.gl/xFqeWYD6qKMMxYjP8"
+                  target="_blank"
+                  >Formosa, Argentina</a
+                ></i
+              >
+            </p>
+            <p id="estado" class="animate__animated animate__fadeIn">
+              <img
+                src="https://i.pinimg.com/originals/0a/4f/84/0a4f84c0d7afb4183eb4838d3200c502.gif"
+                alt="pixelart logo"
+                style="width: 25px"
+              />
+              Actualmente Disponible
+            </p>
+          </div>
+        </div>
+
+        <!-- Botones -->
+        <div id="botones" class="animate__animated animate__fadeIn">
+          <button>Contactame</button>
+          <button>Descarga mi cv</button>
         </div>
       </div>
-
-      <!-- Botones -->
-      <div>
-        <button class="btn btn-dark">Contactame</button>
-        <button class="btn btn-dark">Descarga mi cv</button>
-      </div>
-
       <!-- Foto de presentacion -->
-      <!-- <div>
-        <img src="assets/img/icon.png" alt="Icono Anime Girl" />
-      </div> -->
+      <div class="animate__animated animate__fadeIn">
+        <img src="assets/img/perfil.jpg" alt="Pixelart Avatar" />
+      </div>
     </main>
 
     <footer>
-      <p>Seguime en:</p>
-      <a href="github"><img src="" alt="" /></a>
-      <a href="discord"><img src="" alt="" /></a>
-      <a href="linkedin"><img src="" alt="" /></a>
-      <a href="instagram"><img src="" alt="" /></a>
+      <p class="animate__animated animate__fadeInDown">Seguime en:</p>
+      <a
+        class="animate__animated animate__fadeInDown"
+        href="https://github.com/vaninacodes"
+        target="_blank"
+        >Github</a
+      >
+      <!-- <a
+        class="animate__animated animate__fadeInDown"
+        href="linkedin"
+        target="_blank"
+        >Linkedin</a
+      > -->
+      <a
+        class="animate__animated animate__fadeInDown"
+        href="https://www.instagram.com/vani_resquin?igsi=MWhodGpoNW40bHY4cw=="
+        target="_blank"
+        >Instagram</a
+      >
     </footer>
 
     <!-- Links a script -->
@@ -74,5 +122,14 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Developer"],
+        typeSpeed: 150,
+        showCursor: true,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
