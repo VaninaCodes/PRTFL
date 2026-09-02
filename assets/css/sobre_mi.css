@@ -10,7 +10,25 @@ h2{
     font-style: normal;
     color: grey;
 }
+h3{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 50;
+    font-style: normal;
+    color: grey;
+}
+h4{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 25;
+    font-style: normal;
+    color: grey;
+}
 p{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+ul{
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
@@ -71,4 +89,106 @@ footer a{
 }
 footer a:hover{
     color: grey;
+}
+/* ===== SECCION INTRO ===== */
+#intro {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.info h2 {
+    font-size: 50px;
+}
+
+/* Logo / imagen de perfil */
+#perfil {
+    width: 300px;
+}
+
+#perfil:hover {
+    transform: translateX(3px);
+    transition: transform 0.1s ease;
+}
+
+/* ===== SECCION SOBRE MI ===== */
+.sobremi{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sobremi h3{
+    padding: 10px;
+}
+/* Educacion */
+.educacion {
+    border: 10px solid black;
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+.educacion ul{
+    list-style-type: none;
+}
+
+/* Experiencia */
+.experiencia {
+    background-color: #1D2027;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+
+/* Contacto */
+.contacto {
+    background-color: #7B6158;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+
+/* Idiomas */
+.idiomas {
+    background-color: #A88C7F;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+}
+
+/* Software / Tecnologias */
+.software {
+    background-color: #2f3b56f2;
+    color: #F7F7FA;
+    border-radius: 30px;
+    width: auto;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.software h3 {
+    grid-column: 1 / -1;
+}
+
+.logo-sw {
+    width: 40px;
+}
+
+/* Hobbies */
+.hobbies {
+    border: 10px solid #7b6158d3;
+    border-radius: 30px;
+    color: #7B6158;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
 }
