@@ -28,6 +28,15 @@ p{
     font-style: normal;
     font-size: 20px;
 }
+figcaption{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+figure {
+    text-align: center;
+}
 ul{
     font-family: "VT323", monospace;
     font-weight: 400;
@@ -66,6 +75,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 footer{
     display: flex;
@@ -92,6 +102,7 @@ footer a:hover{
 }
 /* ===== SECCION INTRO ===== */
 #intro {
+    margin-top: 25px;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -101,6 +112,7 @@ footer a:hover{
 
 .info h2 {
     font-size: 50px;
+    
 }
 
 /* Logo / imagen de perfil */
@@ -123,56 +135,46 @@ footer a:hover{
 }
 /* Educacion */
 .educacion {
-    border: 10px solid black;
     color: black;
     width: fit-content;
     height: fit-content;
     padding: 10px;
+    margin-bottom: 25px;
 }
 .educacion ul{
     list-style-type: none;
-}
-
-/* Experiencia */
-.experiencia {
-    background-color: #1D2027;
-    color: #F7F7FA;
-    border-radius: 30px;
-    width: auto;
-    height: fit-content;
-    padding: 10px;
-}
-
-/* Contacto */
-.contacto {
-    background-color: #7B6158;
-    color: #F7F7FA;
-    border-radius: 30px;
-    width: auto;
-    height: fit-content;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Idiomas */
 .idiomas {
-    background-color: #A88C7F;
-    color: #F7F7FA;
-    border-radius: 30px;
-    width: auto;
+    background-color: black;
+    color: white;
+    width: fit-content;
     height: fit-content;
     padding: 10px;
+    margin-bottom: 25px;
+}
+.idiomas ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.idiomas h3{
+    color: white;
 }
 
 /* Software / Tecnologias */
 .software {
-    background-color: #2f3b56f2;
-    color: #F7F7FA;
-    border-radius: 30px;
+    background-color: white;
+    color: black;
     width: auto;
     height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 10px;
+    margin-bottom: 25px;
 }
 
 .software h3 {
@@ -183,12 +185,6 @@ footer a:hover{
     width: 40px;
 }
 
-/* Hobbies */
-.hobbies {
-    border: 10px solid #7b6158d3;
-    border-radius: 30px;
-    color: #7B6158;
-    width: auto;
-    height: fit-content;
-    padding: 10px;
+#salir:hover{
+    color: darkred;
 }
