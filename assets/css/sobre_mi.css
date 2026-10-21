@@ -103,10 +103,13 @@ footer a:hover{
 /* ===== SECCION INTRO ===== */
 #intro {
     display: flex;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 15px;
+    /* padding: 70px; */
 }
 .info h2 {
     font-size: 30px;
@@ -122,7 +125,7 @@ footer a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 .presentacion h1{
     font-size: 20px;
@@ -132,7 +135,7 @@ footer a:hover{
 }
 /* Logo / imagen de perfil */
 #perfil {
-    width: 300px;
+    width: 350px;
 }
 
 /* ===== SECCION SOBRE MI ===== */
